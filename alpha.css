@@ -31,9 +31,9 @@ canvas{
 } 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
-    position:absolute; 
+    position: relative; 
     width: 100%; 
-    height: 100%; 
+    height: 50%; 
     background-color: #232741; 
     
     } 
@@ -50,12 +50,26 @@ canvas{
 
     .count-particles{ border-radius: 0 0 3px 3px; 
     }
+
+
+#particles-js{
+    height: auto;
+    
+}
+.hero-box{
+    display: block;
+    margin: 0 auto;
+    
+    margin-top: 10%;
+}
 video{
     min-width: 50%;
     
     min-height: 50%;
-    display: flex;
-    margin: 0 auto;
+    margin-left: 49vw;
+    position: relative;
+    
+    transform: translate(-50%);
     
 }
 .parallax {
