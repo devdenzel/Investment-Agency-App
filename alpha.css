@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+.navbar{
+    z-index: 2;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+.border-liner{
+    
+    border-bottom: 2.5px solid silver;
+}
+
+/* Background display */
+    
+/* body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }  */
+canvas{ 
+    display: block; 
+    vertical-align: bottom; 
+} 
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #232741; 
+    
+    } 
+    
+    /* ---- stats.js ---- */ 
+    .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; 
+    } 
+    .js-count-particles{ font-size: 1.1em; 
+    } 
+    #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; 
+    } 
+    #stats{ border-radius: 3px 3px 0 0; overflow: hidden; 
+    } 
+
+    .count-particles{ border-radius: 0 0 3px 3px; 
+    }
+video{
+    min-width: 50%;
+    
+    min-height: 50%;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.parallax {
+    
+    min-height: 500px;
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+    background: transparent;
+}
+
+/* Media query */
+@media only screen and (max-width: 320px){
+   /*  .video-box, .video, .smp{
+        margin-left: calc(55% - 50vw);
+        width: 100vw;
+        
+    }
+     */
+}
+@media only screen and (min-width: 530px){
+    #b-plans{
+        margin: 0;
+        
+    }
+    .boxes{
+        padding: 5% 0;
+    }
+    
+}
+    
+@media only screen and (max-width: 425px){
+    #b-plans{
+        margin: 0%;
+        
+    }
+    
+    .boxes{
+        padding: 10% 0;
+    }
+    .plans{
+        padding: 5%;
+    }
+}
+@media only screen and (max-width: 320px){
+    #b-plans{
+        margin: 0% auto;
+        
+    }
+    
+    .boxes{
+        padding: 10% 10%;
+    }
+    .plans{
+        padding: 5%;
+    }
+}
+@media only screen and (min-width: 375px){
+    #b-plans{
+        margin: 0%;
+        
+    }
+    
+    /* .boxes{
+        padding: 10% 0;
+    }
+    .plans{
+        padding: 5%;
+    } */
+}
+    
+@media only screen and (min-width: 768px){
+    #b-plans{
+        margin: 10%;
+        margin-left: px;
+        
+    }
+    
+    
+    /* .boxes{
+        padding: 10% 0;
+    }
+    .plans{
+        padding: 5%;
+    } */
+}
+    
+
+
+
+/* Parallax */
+.about-us, .trade-v{
+    z-index: 1;
+}
+
+/* plans */
+.bg-box{
+    background-image: url('images/set.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

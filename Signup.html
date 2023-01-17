@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Woodberry</title>
+
+    <!-- Tailwind/Css -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="alpha.css">
+    
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<h>
+<body class="font-poppins">
+    
+    <!-- Video Background -->
+    <video autoplay muted loop>
+        <source src="video/wdot.mp4" type="video/mp4" />
+    </video>
+
+        <!-- Navbar -->
+    
+    <nav class="container navver  mx-auto p-6">
+        <!-- Flex container -->
+
+        <div class="flex items-center px-6 justify-between space-x-6">
+            <div class="">
+                <!-- Logo -->
+                <img src="images/aph_prev_ui.png" width="70%">
+            </div>
+
+            <!-- Menu items -->
+            
+            <div class="hidden md:flex text-white   space-x-10">
+                <a href="#" class="hover:text-blue-600">Home</a>
+                <a href="guide.html" class="hover:text-blue-600">Guide</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact Us</a>
+                <a href="" class="hover:text-blue-600">Sign Up</a>
+                
+            </div>
+            <!-- Button -->
+            <a href="" class="hidden md:block p-2 px-3 pt-2 text-white bg-red-400 
+            rounded-full baseline hover:bg-brightRedLight">Login</a>
+            <span class="b-liner"></span>
+            
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class=" open block hamburger 
+            md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col 
+            items-center self-end hidden py-8  space-y-6 font-bold 
+            bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="">Pricing</a>
+                <a href="">Product</a>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Community</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
