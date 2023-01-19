@@ -89,12 +89,13 @@ requestAnimationFrame(update);
 
 /* Navbar Scroll */
 
-document.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    
-    if (window.scrollY > 0){
-        nav.classList.add('scrolled');
-    } else {
+function scrollValue() {
+    var navbar = document.querySelectorAll('header')
+    if (scroll < 200) {
         nav.classList.remove('scrolled');
+    } else {
+        nav.classList.add('scrolled');
     }
-});
+}
+
+window.addEventListener('scroll', scrollValue);
