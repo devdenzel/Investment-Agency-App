@@ -10,6 +10,7 @@ body{
 }
 
 .navbar{
+    
     z-index: 2;
     position: absolute;
     top: 3%;
