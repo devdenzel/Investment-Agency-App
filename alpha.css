@@ -9,28 +9,45 @@ body{
     
 }
 
-.navbar{
+nav{
     
     z-index: 2;
     position: absolute;
     top: 3%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    
-}
-.border-liner{
-    
-    border-bottom: 2.5px solid silver;
+    transition: color 0.4s ease-in-out;
 }
 
-/* Background display */
+nav a{
+    transition: color 0.4s ease-in-out;
+}
+
+/* Navbar color change on scroll */
+
+
+nav.scrolled{
+    z-index: 2;
+    background-color: white;
     
+    opacity: 0.98;
+}
+
+nav.scrolled nav a{
+    color: rgb(233, 76, 102);
+}
+
+
+/* Background display */
+
 /* body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }  */
+
 canvas{ 
     display: block; 
     vertical-align: bottom; 
 } 
 /* ---- particles.js container ---- */ 
+
 #particles-js{ 
     position: relative; 
     width: 100%; 
@@ -83,7 +100,7 @@ video{
 
 /* Media query */
 @media only screen and (max-width: 320px){
-   /*  .video-box, .video, .smp{
+/*  .video-box, .video, .smp{
         margin-left: calc(55% - 50vw);
         width: 100vw;
         
