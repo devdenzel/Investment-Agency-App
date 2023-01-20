@@ -38,52 +38,50 @@
 
     <section class="flex flex-col">
             <!-- Navbar -->
+    
+    <nav class="container  navbar bg-transperant mx-auto  md:px-8  md:mt-10 md:px-auto">
+        <!-- Flex container -->
 
-        <header class="container navbar mx-auto px-36">
-            
-            <!-- Flex container -->
-
-            <nav class="flex fixed items-center mx-20  -mt-8  justify-between space-x-6">
-                <div class="">
-                    <!-- Logo -->
-                    <img src="images/aph_prev_ui.png" width="40%">
-                </div>
-
-                <!-- Menu items -->
-
-                <div class="hidden text-sm md:text-xs md:text-justify space-x-10 md:flex text-white   space-x-10">
-                    <a href="#" class="hover:text-red-6400 ease-in-out">Home</a>
-                    <a href="guide.html" class="hover:text-red-400 ease-in-out">Guide</a>
-                    <a href="contact.html" class=" hover:text-red-400 ease-in-out">Contact Us</a>
-                    <button href="" class="hover:text-red-400 ease-in-out">Sign Up</button>
-
-                </div>
-                <!-- Button -->
-                <a href="" class="hidden md:text-xs md:block p-2 px-3 pt-2 text-white bg-red-400 
-        rounded-full baseline hover:bg-brightRedLight">Login</a>
-                
-
-                <!-- Hamburger icon -->
-                <button id="menu-btn" class=" open block hamburger 
-        md:hidden focus:outline-none">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
-            </nav>
-
-            <!-- Mobile -->
-            <div class="md:hidden">
-                <div id="menu" class="absolute flex-col 
-        items-center self-end hidden py-8  space-y-6 font-bold 
-        bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">Home</a>
-                    <a href="guide.html" class="hover:text-red-400 font-bold">Guide</a>
-                    <a href="contact.html" class=" hover:text-red-400 font-bold">Contact Us</a>
-                    <button href="" class="hover:text-red-400 font-bold">Sign Up</button>
-                </div>
+        <div class="flex items-center -mt-16  px-6 justify-between">
+            <div class="pt-2">
+                <!-- Logo -->
+                <img src="images/aph_prev_ui.png" width="55%">
             </div>
-        </header>
+
+            <!-- Menu items -->
+            
+            <div class="hidden md:flex  lg-text-sm space-x-6">
+                <a href="alpha.html" class="  text-slate-50 hover:text-red-400">Home</a>
+                <a href="guide.html" class="text-slate-50 hover:text-red-400">Guide</a>
+                <a href="contact.html" class="text-slate-50 hover:text-red-400">Contact</a>
+                <a href="#" class="text-slate-50 hover:text-red-400">Sign Up</a>
+                
+            </div>
+            <!-- Button -->
+            <a href="" class="hidden md:block p-1 px-6 text-white bg-red-400 
+            rounded-full baseline hover:bg-slate-50 hover:text-black">Login</a>
+
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class=" open block hamburger 
+            md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col 
+            items-center self-end hidden py-8 mt-10 space-y-6 font-bold 
+            bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="alpha.html">Home</a>
+                <a href="guide.html">Guide</a>
+                <a href="contact.html">Contact Us</a>
+                
+            </div>
+        </div>
+    </nav>
 
         <!-- particles.js container -->
         <div id="particles-js">

@@ -1,17 +1,11 @@
-/* var btn = document.querySelector("#my-btn");
-var container = document.querySelector("#container");
-var pLax = document.querySelectorAll(".parallax");
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
 
-btn.addEventListener("click", function(){
-    if (container.style.display === "block"){
-        container.style.display = "none";
-        
-    } else {
-        container.style.display = "block";
-    }
-});
- */
-
+btn.addEventListener('click', () =>{
+    btn.classList.toggle('open')
+    nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+})
 
 
 /* Background particle display with particle js */
