@@ -1,3 +1,5 @@
+/* Mobile Menu */
+
 const btn = document.getElementById('menu-btn')
 const nav = document.getElementById('menu')
 
@@ -8,88 +10,63 @@ btn.addEventListener('click', () =>{
 })
 
 
-/* Background particle display with particle js */
-particlesJS("particles-js", {
-particles: {
-number: { value: 160, density: { enable: true, value_area: 800 } },
-color: { value: "#ffffff" },
-shape: {
-    type: "circle",
-    stroke: { width: 0, color: "#000000" },
-    polygon: { nb_sides: 5 },
-    image: { src: "img/github.svg", width: 100, height: 100 },
-},
-opacity: {
-    value: 1,
-    random: true,
-    anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
-},
-size: {
-    value: 3,
-    random: true,
-    anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
-},
-line_linked: {
-    enable: false,
-    distance: 150,
-    color: "#ffffff",
-    opacity: 0.4,
-    width: 1,
-},
-move: {
-    enable: true,
-    speed: 1,
-    direction: "none",
-    random: true,
-    straight: false,
-    out_mode: "out",
-    bounce: false,
-    attract: { enable: false, rotateX: 600, rotateY: 600 },
-},
-},
-interactivity: {
-detect_on: "canvas",
-events: {
-    onhover: { enable: true, mode: "bubble" },
-    onclick: { enable: true, mode: "repulse" },
-    resize: true,
-},
-modes: {
-    grab: { distance: 400, line_linked: { opacity: 1 } },
-    bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
-    repulse: { distance: 400, duration: 0.4 },
-    push: { particles_nb: 4 },
-    remove: { particles_nb: 2 },
-},
-},
-retina_detect: true,
-});var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
-update = function () {
-stats.begin();
-stats.end();
-if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-}
-requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
 
-/* Navbar Scroll */
+/* Navbar Color Change On Scroll */
 
 function scrollValue() {
-    var navbar = document.querySelectorAll('header')
-    if (scroll < 200) {
-        nav.classList.remove('scrolled');
+    var navbar = document.querySelector('#navbar');
+    // console.log(navbar)
+    const scroll = window.scrollY;
+    if (scroll < 100) {
+        navbar.classList.remove('scrolled');
     } else {
-        nav.classList.add('scrolled');
+        navbar.classList.add('scrolled');
     }
 }
 
 window.addEventListener('scroll', scrollValue);
+
+
+function scrollValueNav() {
+    var navbarNav = document.querySelector('#navbar');
+    // console.log(navbar)
+    const scroll = window.scrollY;
+    if (scroll < 100) {
+        navbarNav.classList.remove('scrolled-nav');
+    } else {
+        navbarNav.classList.add('scrolled-nav');
+    }
+}
+
+window.addEventListener('scroll', scrollValueNav);
+
+/* Toggle Buttons */
+
+function swapText(){
+    var id=document.getElementsByClassName('crypto')[0].id;
+    if(id==1){
+    document.getElementById("text").innerHTML = "$499<sub>/min";
+    document.getElementsByClassName("crypto")[0].id=0;
+    
+    }
+    else {
+        document.getElementById("text").innerHTML = "$999<sub>/min";
+        document.getElementsByClassName("crypto")[0].id=1;
+    
+    }
+}
+/* function swapText(){
+    var id=document.getElementsByClassName('crypto')[0].id;
+    if(id==1){
+    
+    document.getElementById("text-one").innerHTML = "$999<sub>/min";
+    document.getElementsByClassName("crypto")[0].id=0;
+    
+    else {
+        
+        document.getElementById("text-one").innerHTML = "$4999<sub>/min";
+        document.getElementsByClassName("crypto")[0].id=1;
+        document.getElementById("text-two").innerHTML = "$24999<sub>/min";
+        document.getElementsByClassName("crypto")[0].id=1;
+    }
+} */

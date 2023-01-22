@@ -11,7 +11,6 @@ body{
 .navbar{
     z-index: 2;
     position: fixed;
-    background: transparent;
 }
 /* Hamburger Menu */
 .hamburger{
@@ -20,6 +19,7 @@ body{
     height: 24px;
     transition: all 0.25s;
     position: relative;
+    margin-top: 1.5px;
 }
 .hamburger-top, .hamburger-middle, .hamburger-bottom{
     position: absolute;
@@ -52,26 +52,32 @@ body{
 .open .hamburger-bottom{
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
-header{
-    z-index: 2;
-}
 
-header nav a{
-    transition: color 0.4s ease-in-out;
-}
 
 /* Navbar color change on scroll */
 
 
-.scrolled{
-    z-index: 2;
+.scrolled {
+    z-index: 999;
     background-color: white;
-    
     opacity: 0.98;
+    margin-top: -3px;
+    transition: 0.25s ease-in-out;
 }
-
-header .scrolled nav a{
+.scrolled-nav {
+    display: flex;
+    padding-top: 40px;
     color: rgb(233, 76, 102);
+}
+.scrolled-nav a {
+    display: flex;
+    color: rgb(233, 76, 102);
+    margin-left: 50px;
+}
+.scrolled-nav .scrolled-link {
+    display: flex;
+    color: white;
+    margin-left: 20px;
 }
 
 
@@ -127,6 +133,9 @@ video{
     transform: translate(-50%);
     
 }
+
+/* Parallax */
+
 .parallax {
     
     min-height: 500px;
@@ -136,13 +145,10 @@ video{
 }
 
 /* Media query */
-@media only screen and (max-width: 320px){
-/*  .video-box, .video, .smp{
-        margin-left: calc(55% - 50vw);
-        width: 100vw;
-        
-    }
-     */
+@media only screen and (max-width: 450px){
+.navbar{
+    margin-top: 25px;
+}
 }
 @media only screen and (min-width: 530px){
     #b-plans{
@@ -187,14 +193,7 @@ video{
         
     }
     
-    /* .boxes{
-        padding: 10% 0;
-    }
-    .plans{
-        padding: 5%;
-    } */
 }
-    
 @media only screen and (min-width: 768px){
     #b-plans{
         margin: 10%;
@@ -202,13 +201,6 @@ video{
         
     }
     
-    
-    /* .boxes{
-        padding: 10% 0;
-    }
-    .plans{
-        padding: 5%;
-    } */
 }
     
 
