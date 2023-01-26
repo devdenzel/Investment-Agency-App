@@ -123,6 +123,10 @@ canvas{
     
     margin-top: 10%;
 }
+
+/* Display Video */
+
+
 video{
     min-width: 50%;
     
@@ -138,73 +142,25 @@ video{
 
 .parallax {
     
-    min-height: 500px;
+    min-height: 400px;
     margin-left: calc(50% - 50vw);
     width: 100vw;
-    background: transparent;
+    
 }
 
+/* Trading chart */
+
+.trading-chart{
+    z-index: 99;
+
+}
 /* Media query */
+
 @media only screen and (max-width: 450px){
 .navbar{
-    margin-top: 25px;
+    margin-top: -30px;
 }
 }
-@media only screen and (min-width: 530px){
-    #b-plans{
-        margin: 0;
-        
-    }
-    .boxes{
-        padding: 5% 0;
-    }
-    
-}
-    
-@media only screen and (max-width: 425px){
-    #b-plans{
-        margin: 0%;
-        
-    }
-    
-    .boxes{
-        padding: 10% 0;
-    }
-    .plans{
-        padding: 5%;
-    }
-}
-@media only screen and (max-width: 320px){
-    #b-plans{
-        margin: 0% auto;
-        
-    }
-    
-    .boxes{
-        padding: 10% 10%;
-    }
-    .plans{
-        padding: 5%;
-    }
-}
-@media only screen and (min-width: 375px){
-    #b-plans{
-        margin: 0%;
-        
-    }
-    
-}
-@media only screen and (min-width: 768px){
-    #b-plans{
-        margin: 10%;
-        margin-left: px;
-        
-    }
-    
-}
-    
-
-
 
 /* Parallax */
 .about-us, .trade-v{

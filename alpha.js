@@ -26,6 +26,7 @@ function scrollValue() {
 
 window.addEventListener('scroll', scrollValue);
 
+/* Nav scrolled link color change*/
 
 function scrollValueNav() {
     var navbarNav = document.querySelector('#navbar');
@@ -65,18 +66,3 @@ function swapText(){
     
     }
 }
-/* function swapText(){
-    var id=document.getElementsByClassName('crypto')[0].id;
-    if(id==1){
-    
-    document.getElementById("text-one").innerHTML = "$999<sub>/min";
-    document.getElementsByClassName("crypto")[0].id=0;
-    
-    else {
-        
-        document.getElementById("text-one").innerHTML = "$4999<sub>/min";
-        document.getElementsByClassName("crypto")[0].id=1;
-        document.getElementById("text-two").innerHTML = "$24999<sub>/min";
-        document.getElementsByClassName("crypto")[0].id=1;
-    }
-} */

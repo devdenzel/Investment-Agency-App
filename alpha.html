@@ -11,6 +11,7 @@
     <!-- Tailwind Css -->
 
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="alpha.css">
 
 
@@ -26,72 +27,72 @@
         
             <!-- Navbar -->
     
-    <nav id="navbar" class="container navbar  mx-auto  md:px-8  md:mt-10 md:px-44">
-        <!-- Flex container -->
+        <nav id="navbar" class="container navbar p-6 mx-auto  ">
+            <!-- Flex container -->
 
-        <div class="flex items-center -mt-16  px-6 justify-between lg:-mt-28">
-            <div class="pt-2">
-                <!-- Logo -->
-                <img src="images/aph_prev_ui.png" width="55%">
+            <div class="flex items-center  px-6 justify-between lg:px-44 lg:-mt-24">
+                <div class="pt-2">
+                    <!-- Logo -->
+                    <img src="images/aph_prev_ui.png" width="55%">
+                </div>
+
+                <!-- Menu items -->
+                
+                <div class="hidden md:flex  lg-text-sm space-x-6">
+                    <a href="alpha.html" class="  text-slate-50 hover:text-red-400">Home</a>
+                    <a href="guide.html" class="text-slate-50 hover:text-red-400">Guide</a>
+                    <a href="contact.html" class="text-slate-50 hover:text-red-400">Contact</a>
+                    <a href="#" class="text-slate-50 hover:text-red-400">Sign Up</a>
+                    
+                </div>
+                <!-- Button -->
+                <a href="" class="scrolled-link hidden md:block md:-ml-10 p-1 px-6 text-white bg-red-400 
+                rounded-full baseline hover:bg-slate-50 hover:text-black">Login</a>
+
+                <!-- Hamburger icon -->
+                <button id="menu-btn" class=" mt-4 open block hamburger 
+                md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
             </div>
 
-            <!-- Menu items -->
+            <!-- Mobile -->
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col 
+                items-center self-end hidden py-8 mt-10 space-y-6 font-bold 
+                bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="alpha.html">Home</a>
+                    <a href="guide.html">Guide</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="Signup.html">Sign Up</a>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+
+            <!-- particles.js container -->
+            <div id="particles-js">
+                <div class="hero-box absolute z-1 mt-28">
+                    <h1 class=" text-slate-50 font-bold mt-10 ml-20 mb-10 sm:text-lg lg:text-2xl  sm:tracking-wide text-center">SECURE AND
+                        FAST TRADING</h1>
+                    <video class="m:w-xl"  controls="">
+                        <source src="video/vid.mp4" type="video/mp4" width="50%"/>
+                    </video>
+                </div>
+            </div>
             
-            <div class="hidden md:flex  lg-text-sm space-x-6">
-                <a href="alpha.html" class="  text-slate-50 hover:text-red-400">Home</a>
-                <a href="guide.html" class="text-slate-50 hover:text-red-400">Guide</a>
-                <a href="contact.html" class="text-slate-50 hover:text-red-400">Contact</a>
-                <a href="#" class="text-slate-50 hover:text-red-400">Sign Up</a>
+            <!-- stats - count particles -->
+            <div class="count-particles">
+                
+                <span class="js-count-particles">
+                    
+                </span>
                 
             </div>
-            <!-- Button -->
-            <a href="" class="scrolled-link hidden md:block md:-ml-10 p-1 px-6 text-white bg-red-400 
-            rounded-full baseline hover:bg-slate-50 hover:text-black">Login</a>
-
-            <!-- Hamburger icon -->
-            <button id="menu-btn" class=" mt-4 open block hamburger 
-            md:hidden focus:outline-none">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-        </div>
-
-        <!-- Mobile -->
-        <div class="md:hidden">
-            <div id="menu" class="absolute flex-col 
-            items-center self-end hidden py-8 mt-10 space-y-6 font-bold 
-            bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="alpha.html">Home</a>
-                <a href="guide.html">Guide</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="Signup.html">Sign Up</a>
-                
-                
-            </div>
-        </div>
-    </nav>
-
-        <!-- particles.js container -->
-        <div id="particles-js">
-            <div class="hero-box absolute z-1 mt-28">
-                <h1 class=" text-slate-50 font-bold mt-10 ml-20 mb-10 sm:text-lg lg:text-2xl  sm:tracking-wide text-center">SECURE AND
-                    FAST TRADING</h1>
-                <video class="m:w-xl"  controls="">
-                    <source src="video/vid.mp4" type="video/mp4" width="50%"/>
-                </video>
-            </div>
-        </div>
         
-        <!-- stats - count particles -->
-        <div class="count-particles">
-            
-            <span class="js-count-particles">
-                
-            </span>
-            
-        </div>
-    
 
 
         <!-- features -->
@@ -173,16 +174,14 @@
                 </script>
         </div>
 
-
-
         <!-- Plans -->
 
+    <section id="testimonials">
+        <!-- Container to heading and plans blocks -->
 
-        <div id="b-plans" class="max-w-6xl px-5 mx-auto mt-32 text-left">
-            <div class="plans item center text-center p-20">
-                <h1 class="text-2xl">Check Out Awesome Plans And Order Now</h1>
-                <h3 class="text-slate-500">Chose Which Package Is Best For You.</h3>
-            </div>
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <h1 class="text-2xl">Check Out Awesome Plans And Order Now</h1>
+            <h3 class="text-slate-500">Chose Which Package Is Best For You.</h3>
 
             <!-- Toggler-->
 
@@ -199,126 +198,153 @@
 
             </div>
 
-                <!-- Forex -->
+            <!-- Plans Container -->
             
-
-                <div id="forex-show" class="forex  flex flex-col mt-24 gap-8 md:flex-row md:space-x-6 ">
-
-                    <div class="flex text-left boxes flex-col mb:10 items-center p-6 space-y-6 
-            rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
-
-                        <h5 class="text-xl text-left font-bold">Basic Plan</h5>
-                        
-                        <p id="text" class="text-slate-400 text-3xl">$999.99<sub>/min</sub></p>
-
-                        </p>
-                        <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
-                rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
-                    </div>
-
-                    <div class="flex boxes flex-col mb:10 items-center p-6 space-y-6 
-            rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
-
-                        <h5 class="text-xl text-left font-bold">Expert Plan</h5>
-                        <p id="text-one" class="text-slate-400 text-3xl text-left ">
-                            $4999.99<sub>/min</sub>
-
-                        </p>
-                        <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
-                rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
-                    </div>
-
-                    <div class="flex boxes flex-col mb:10 bg-box items-center p-6 space-y-6 
-            rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
-
-                        <h5 class="text-xl text-left font-bold">Basic Plan</h5>
-                        <p id="text-two" class="text-slate-400 text-3xl text-left ">
-                            $24999.99<sub>/min</sub>
-
-                        </p>
-                        <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
-                rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
-                    </div>
-                </div>
-
-        </div>
-    
-
-        <!-- Crypto  -->
-
-        
-        <div id="b-plans" class="max-w-6xl px-5 mx-auto mt-32 text-left">
-
-
-            <!-- Plans -->
-            <div id="crypto-show" class="hidden crypto flex flex-col -mt-24 gap-8 md:flex-row md:space-x-6 ">
-
-                <div class="flex text-left boxes flex-col items-center p-6 space-y-6 
-        rounded-lg bg-slate-100 md:w-1/3 mb:10 shadow-lg shadow-slate-500/50">
-
-                    <h5 class="text-xl text-left font-bold">Basic Plan</h5>
-                    <p class="text-slate-400 text-3xl text-left ">
-                        $499.99<sub>/min</sub>
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6 ">
+                <!-- Plan 1 -->
+                <div class=" mb-10 flex-col items-center p-6 space-y-6 
+                rounded-lg bg-gray-200 bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
+                    
+                    <h5 class="text-xl  font-bold">Basic Plan</h5>
+                    
+                    <p id="text" class="text-slate-400 text-3xl">$999.99<sub>/min</sub></p>
 
                     </p>
-                    <button href="ht" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
-            rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
+                    <a href="" class="p-3 px-6 pt-2 text-white text-white bg-red-400 
+                    rounded-md baseline hover:bg-brightRedLight">Get Started</a>
                 </div>
+                <!-- Plan 2 -->
+                <div class=" flex-col mb-10 items-center p-6 space-y-6 
+                rounded-lg bg-gray-200 bg-slate-100 md:flex md:w-1/3 shadow-lg shadow-slate-500/50">
+                    
+                    <h5 class="text-xl  font-bold">Expert Plan</h5>
+                    <p id="text-one" class="text-slate-400 text-3xl text-left ">
+                        $4999.99<sub>/min</sub>
 
-                <div class="flex boxes flex-col items-center p-6 space-y-6 
-        rounded-lg bg-slate-100 md:w-1/3 mb:10 shadow-lg shadow-slate-500/50">
+                    </p>
+                    <a href="" class="p-3 px-6 pt-2 text-white text-white bg-red-400 
+                    rounded-md baseline hover:bg-brightRedLight">Get Started</a>
+                </div>
+                <!-- Plan 3 -->
+                <div class=" flex-col mb-10 items-center p-6 space-y-6 
+                rounded-lg bg-gray-200 bg-box bg-slate-100 md:flex md:w-1/3 shadow-lg shadow-slate-500/50">
+                    
+                    <h5 class="text-xl  font-bold">Refullxe Plan</h5>
+                    <p id="text-two" class="text-slate-400 text-3xl text-left ">
+                        $24999.99<sub>/min</sub>
 
-                    <h5 class="text-xl text-left font-bold">Expert Plan</h5>
-                    <p class="text-slate-400 text-3xl text-left ">
-                        $999.99<sub>/min</sub>
+                    </p>
+                    <a href="" class="p-3 px-6 pt-2 text-white text-white bg-red-400 
+                    rounded-md baseline hover:bg-brightRedLight">Get Started</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+        <!-- Plans -->
+
+
+        <!-- <div id="b-plans" class="max-w-6xl px-5 mx-auto mt-32 text-left">
+            <div class="plans item center text-center p-20">
+                <h1 class="text-2xl">Check Out Awesome Plans And Order Now</h1>
+                <h3 class="text-slate-500">Chose Which Package Is Best For You.</h3>
+            </div>
+
+            
+            <div class=" flex container rounded-md button-box toggle item-center text-center justify-center ">
+                <div class="bg-slate-200">
+                    <div>
+                        <button id="0" onclick="swapText()" class="px-10 hover:bg-slate-50 py-4 bg-slate-200 ">Forex</button>
+                    
+                        <button id="1 2 3" onclick="swapText()" class=" crypto hover:bg-slate-50 px-10 py-4 bg-slate-200 rounded-sm"
+                            >Crypto</button>
+                    </div>
+                </div>
+                
+
+            </div>
+
+                
+            
+
+            <div id="forex-show" class="forex  flex flex-col mt-24 gap-8  md:flex-row md:space-x-6 ">
+
+                <div class="flex text-left boxes flex-col mb:10 items-center p-6 space-y-6 
+        rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
+
+                    <h5 class="text-xl text-left font-bold">Basic Plan</h5>
+                    
+                    <p id="text" class="text-slate-400 text-3xl">$999.99<sub>/min</sub></p>
 
                     </p>
                     <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
             rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
                 </div>
 
-                <div class="flex boxes flex-col bg-box items-center p-6 space-y-6 
-        rounded-lg bg-slate-100 md:w-1/3 mb:30 shadow-lg shadow-slate-500/50">
+                <div class="flex boxes flex-col mb:10 items-center p-6 space-y-6 
+        rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
 
-                    <h5 class="text-xl text-left font-bold">Refullux Plan</h5>
-                    <p class="text-slate-400 text-3xl text-left ">
+                    <h5 class="text-xl text-left font-bold">Expert Plan</h5>
+                    <p id="text-one" class="text-slate-400 text-3xl text-left ">
                         $4999.99<sub>/min</sub>
 
                     </p>
                     <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
             rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
                 </div>
+
+                <div class="flex boxes flex-col mb:10 bg-box items-center p-6 space-y-6 
+        rounded-lg bg-slate-100 md:w-1/3 shadow-lg shadow-slate-500/50">
+
+                    <h5 class="text-xl text-left font-bold">Basic Plan</h5>
+                    <p id="text-two" class="text-slate-400 text-3xl text-left ">
+                        $24999.99<sub>/min</sub>
+
+                    </p>
+                    <button href="" class="mt-12  p-3 px-20 pt-2 text-white bg-red-400 
+            rounded-md baseline hover:bg-brightRedLight text-white bg-red-400">Choose</button>
+                </div>
             </div>
 
         </div>
-        
-
+     -->
 
 
 
     <!-- Parallax -->
 
-        <div class="p-container item-center align-center">
+        <div class="p-container item-center align-center grid grid-row-2 grid-flow-row gap-8">
 
-            <div class=" parallax container flex flex-col align-center items-center justify-between 
+            <div class=" parallax bg-red-100 container leading-loose  align-center items-center justify-between 
                 px-6 py-24 mx-auto space-y-12 md:py-12 md:flex md:space-y-0" data-parallax="scroll" data-z-index="1"
                 data-image-src="images/stars.jfif">
-                <div class="about-us sm:p-0 p-20  md:p-2 sm:text-sm md:text-sm text-center">
-                    <h4 class=" font-monsterrat text-slate-100 text-2xl">APH FX Tradings</h4>
-                    <h1 class=" leading -5 text-red-400 text-5xl">MORE ABOUT US</h1>
-                    <P class="p-10 text-2xl text-slate-100 font-light text-justify">With our all New strategy on bitcoin
-                        and forex trades, with well experienced experts and seasoned professionials, we make up to 98%
-                        daily wins, leaving minor or zero margin for errors and losses, we also have a bitcoin mining
-                        team working with our platform. We generate a profit of 3BTC daily with its equivalent in
-                        today's market. APH FX Trading is SEC registered, fully licensed and Insured, your initial
-                        capital invest is 100% insured</P>
+                
+                <div class="trading-chart pr-24 m-24">
+                                        <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_f6898"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text"></span></a> APH Fx Chart</div>
+                        
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                <div class="about-us m-14 sm:p-0 ml-40  md:p-2 sm:text-sm md:text-sm text-center">
+                    <h4 class="mb-6 text-right font-monsterrat text-slate-100 text-2xl">APH FX Tradings</h4>
+                    <h1 class="mb-6 text-right leading -5 text-red-400 text-5xl">MORE ABOUT US</h1>
+                    <div>
+                        <P class="mb-6 text-md sm:p-4 text-slate-100 sm-text-sm font-light text-justify">With our all New strategy on bitcoin
+                            and forex trades, with well experienced experts and seasoned professionials, we make up to 98%
+                            daily wins, leaving minor or zero margin for errors and losses, we also have a bitcoin mining
+                            team working with our platform. <br>We generate a profit of 3BTC daily with its equivalent in
+                            today's market. APH FX Trading is SEC registered, fully licensed and Insured, your initial
+                            capital invest is 100% insured</P>
+                    </div>
 
                 </div>
-
             </div>
-
-        </div>
-    </div>
 
 
         
@@ -326,6 +352,25 @@
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
+        <!-- Trading View -->
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget(
+                        {
+                            "autosize": true,
+                        "symbol": "NASDAQ:AAPL",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_f6898"
+                    }
+                        );
+                        </script>
         <!-- JS -->
         <script src="alpha.js"></script>
         <script src="particles.js"></script>
