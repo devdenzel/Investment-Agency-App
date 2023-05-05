@@ -1,5 +1,5 @@
 # What Is This Project?
-* This project is an financia agency website.
+* This project is an financial agency website.
 
 # What Does This Project Do?
 * It showcases the company details, business offerings and more.
